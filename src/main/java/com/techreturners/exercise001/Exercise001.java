@@ -1,30 +1,26 @@
 package com.techreturners.exercise001;
 
-import java.util.List;
 import java.text.DecimalFormat;
+import java.util.List;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
-        // Add your code here
         String resultStr = word.substring(0, 1).toUpperCase() + word.substring(1);
         return resultStr;
     }
 
     public String generateInitials(String firstName, String lastName) {
-        // Add your code here
         String resultStr = firstName.substring(0, 1).toUpperCase() + "." + lastName.substring(0, 1).toUpperCase();
         return resultStr;
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        // Add your code here
         double result = originalPrice+(originalPrice * vatRate * 0.01);
         DecimalFormat df = new DecimalFormat("#.##");
         return  Double.valueOf(df.format(result));
     }
 
     public String reverse(String sentence) {
-        // Add your code here
 
         if (sentence == null) {
             return null;
